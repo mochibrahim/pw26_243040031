@@ -1,0 +1,158 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.aplikasi-keuangan {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+}
+
+.header-keuangan {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-keuangan h1 {
+  color: #1e3a5f;
+  margin-bottom: 8px;
+}
+
+.header-keuangan p {
+  color: #64748b;
+}
+
+.ringkasan-saldo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.kotak-saldo {
+  padding: 20px;
+  background: white;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #0000000d;
+}
+
+.kotak-saldo h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.kotak-saldo p {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.kotak-saldo.utama {
+  grid-column: 1 / -1;
+  background: #1e3a5f;
+  color: white;
+}
+
+.form-transaksi,
+.daftar-transaksi {
+  background: white;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 8px #0000000d;
+}
+
+.form-transaksi h2,
+.daftar-transaksi h2 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+.form-transaksi label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+.form-transaksi input,
+.form-transaksi select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.tombol-tambah {
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 7px;
+  background: #1e3a5f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item-transaksi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.item-transaksi p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.nominal-masuk {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.nominal-keluar {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.tombol-hapus {
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+.pesan-kosong {
+  text-align: center;
+  color: #64748b;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .aplikasi-keuangan {
+    padding: 12px;
+  }
+
+  .ringkasan-saldo {
+    grid-template-columns: 1fr;
+  }
+
+  .kotak-saldo.utama {
+    grid-column: auto;
+  }
+
+  .item-transaksi {
+    flex-wrap: wrap;
+  }
+}
